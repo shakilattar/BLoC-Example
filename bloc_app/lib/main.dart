@@ -60,17 +60,17 @@ class Home extends StatelessWidget {
                       child: Card(
                         color: Colors.blue,
                         elevation: 4,
-                        margin: EdgeInsets.symmetric(vertical: 10),
+                        margin: const EdgeInsets.symmetric(vertical: 10),
                         child: ListTile(
                           title: Text(
                             userList[index].firstName,
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.white,
                             ),
                           ),
                           subtitle: Text(
                             userList[index].lastName,
-                            style: TextStyle(color: Colors.white),
+                            style: const TextStyle(color: Colors.white),
                           ),
                           trailing: CircleAvatar(
                             backgroundImage:
@@ -86,7 +86,7 @@ class Home extends StatelessWidget {
             }
 
             if (state is UserErrorState) {
-              return Center(
+              return const Center(
                 child: Text('Error'),
               );
             }
